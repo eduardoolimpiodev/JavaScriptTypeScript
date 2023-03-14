@@ -16,3 +16,5 @@ console.log(123456);
 console.log(123456, 123.56);
 
 console.log(36, 12.58, "teste" );
+
+
