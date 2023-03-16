@@ -1,34 +1,40 @@
-/* 
+/*  
 
-Tipo de dados Primitivos (imutaveis) - String, Number, Boolean, Undefined, Null(bigint e symbol) - Valores copiados.
+Tipos de dados primitivos: [valores imutáveis] - Não podemos modifica-los, são valores copiados.
+String. Number, Boolean, Undefined, Null (bigint, symbol).
 
-
+Tipos de valor que são passados por referência [Valores mutáveis] - São valores passados por referência.
+Podemos modifica-los
+Array, Object, function.
 */
 
-let a = 'A';
-let b = a;
-console.log(a, b);
 
-a = 'outraCoisa';
-console.log(a, b);
+const a = {
+    nome: 'Eduardo',
+    'sobrenome': 'Olimpio'
+};
 
-//Referência são mutáveis - Arrays, objetos e funções - Passados por referência
+const b = {...a};
 
-let x = [1, 2, 3];
-let y = [...x];
-let z = y;
-console.log(x, y);
+a.nome = 'Maria'
+console.log(a);
+console.log(b);
 
-x.push(4)
-console.log(x, y);
+// let a = [1, 2, 3];
+// let b = [...a];
+// let c = b;
 
-y.pop();
-console.log(x, y);
+// console.log(a, b);
+// a.push(4);
+// console.log(a, b)
 
-x.push('Luiz');
-console.log(z);
+// b.pop();
+// console.log(a, b);
+// console.log(a, b, c);
 
-console.log(x, y, z);
+// a.push('Luiz');
+// console.log(c);
 
-
+// console.log(b)
+// console.log(a);
 
