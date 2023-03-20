@@ -1,0 +1,5 @@
+/* 
+imc = peso * altura / altura
+
+*/
+
